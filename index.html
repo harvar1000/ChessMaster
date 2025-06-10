@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CHESS MASTER AI</h1>
+</body>
+    <div id="game-container">
+        <div id="player-info">
+            <div id="player-black">
+                <h3>Black Player</h3>
+                <p>Moves:</p>
+                <ul id="black-moves"></ul>
+            </div>
+            <div id="game-status">
+                <h2 id="turn-status">Black's Turn</h2>
+            </div>
+            <div id="player-white">
+                <h3>White Player</h3>
+                <p>Moves:</p>
+                <ul id="white-moves"></ul>
+            </div>
+        </div>
+
+        <div id="board"></div>
+
+        <div id="game-over-message" style="display: none;">
+            <h2>Game Over!</h2>
+            <p>The game has ended.</p>
+            <button onclick="resetGame()">Restart Game</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
